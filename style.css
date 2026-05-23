@@ -13,23 +13,17 @@
 
 /* ── DESIGN TOKENS (DEEP NAVY THEME) ── */
 :root {
-  /* Accents */
-  --accent-1: #ff4757;
-  --accent-2: #ff7e67;
-  --gradient-main: linear-gradient(
-    135deg,
-    var(--accent-1) 0%,
-    var(--accent-2) 100%
-  );
-  --accent-dim: rgba(255, 71, 87, 0.15);
+  /* Accent: Royal Blue */
+  --accent-1: #008BFF;
+  --accent-2: #00d2ff;
+  --gradient-main: linear-gradient(135deg, var(--accent-1) 0%, var(--accent-2) 100%);
+  --accent-dim: rgba(0, 139, 255, 0.15);
 
   /* Deep Navy Palette */
   --bg: #011122;
   --surface: rgba(4, 26, 50, 0.6);
   --surface-solid: #031529;
-  --surface-2: #052240;
-
-  /* Typography Colors (Inverted for Dark Mode) */
+  
   --ink: #f0f6fc;
   --ink-2: #b4c5d6;
   --ink-3: #7d92a8;
@@ -520,7 +514,6 @@ section {
   background: var(--surface-solid);
 }
 
-/* ── 3D ROTATING RUBIK'S CUBE ── */
 /* ── 3D ANIMATED PROFILE ── */
 .hero-3d {
   perspective: 1000px;
