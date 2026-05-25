@@ -1,72 +1,66 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antama Kurnialista — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Outfit:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- CUSTOM CURSOR -->
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
-    <!-- ═══════════ NAV ═══════════ -->
-    <nav>
-      <a href="#hero" class="nav-logo">Antama<span>||</span>Kurnialista</a>
+    <div class="neon-grid"></div>
+    <div class="scanline"></div>
 
+    <nav>
+      <a href="#hero" class="nav-logo">Antama Kurnialista</a>
       <div class="nav-center">
         <a href="#about">About</a>
         <a href="#focus">Focus</a>
         <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Journey</a>
         <a href="#projects">Projects</a>
+        <a href="#social-feed">Design</a>
       </div>
-
-      <!-- <div class="nav-right">
-        <a href="#contact" class="nav-cta">Let's talk</a>
-      </div> -->
     </nav>
 
-    <!-- ═══════════ MAIN ═══════════ -->
     <main>
-      <!-- HERO -->
       <section id="hero">
         <div class="hero-inner">
           <div>
             <div class="hero-badge">
-              <span class="badge-dot"></span>
-              Available for Fullstack Projects
+              <span class="badge-dot"></span> System Online
             </div>
             <h1>
-              Crafting<br /><em class="text-gradient">Digital</em><br />Systems
+              Crafting <br /><span class="text-neon">Digital</span><br />Systems
             </h1>
             <p class="hero-desc">
-              Fullstack Web Developer & Graphic Designer. Passionate about
-              building robust backend architectures, dynamic frontend
-              interfaces, and purposeful design.
+              Fullstack Web Developer & Graphic Designer. Building robust
+              backend architectures and dynamic, intuitive frontend interfaces.
             </p>
             <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">View my work</a>
-              <a href="#contact" class="btn btn-outline">Get in touch →</a>
+              <a href="#projects" class="btn btn-primary">Initialize Work</a>
             </div>
           </div>
-
           <div class="hero-3d">
             <div class="profile-card" data-tilt>
-              <div class="profile-glow"></div>
               <div class="profile-image">
                 <img src="img/ws.jpeg" alt="Antama Kurnialista" />
               </div>
               <div class="profile-info">
                 <h3>Antama Kurnialista</h3>
-                <p>Fullstack Developer & Designer</p>
+                <p>SYS.DEV // DESIGNER</p>
               </div>
             </div>
           </div>
@@ -74,43 +68,28 @@
       </section>
 
       <section id="about">
-        <p class="label reveal">About me</p>
+        <p class="label reveal">>> sys.about</p>
         <div class="about-grid">
           <div>
             <h2 class="section-h2 reveal">Bridging code and creativity</h2>
             <p class="about-text reveal">
               I am Antama Kurnialista, an Information Systems student at
               Institut Widya Pratama with a dual passion for fullstack
-              development and graphic design.
+              development and graphic design. I approach every project with a
+              systematic backend mindset and a creative designer's eye.
             </p>
-            <p class="about-text reveal">
-              I approach every project with a systematic backend mindset and a
-              creative designer's eye, ensuring that every system I build is not
-              only performant but also aesthetically engaging.
-            </p>
-
             <div class="stats-grid reveal">
               <div class="stat">
-                <div class="stat-num">3<span>+</span></div>
-                <div class="stat-label">Years of Focus</div>
+                <div class="stat-num">3+</div>
+                <div class="stat-label">Years Focus</div>
               </div>
-              <div class="stat">
-                <div class="stat-num">10<span>+</span></div>
-                <div class="stat-label">Projects Built</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num">100<span>%</span></div>
-                <div class="stat-label">Frontend Passion</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num">∞</div>
-                <div class="stat-label">Lines of Code</div>
-              </div>
+              <!-- <div class="stat">
+                <div class="stat-num">10+</div>
+                <div class="stat-label">Projects Deployed</div>
+              </div> -->
             </div>
           </div>
-
-          <div class="reveal" style="transition-delay: 0.12s">
-            <p class="label">Personal info</p>
+          <div class="reveal" style="transition-delay: 0.1s">
             <ul class="info-list">
               <li class="info-item">
                 <span class="info-key">Name</span
@@ -118,19 +97,7 @@
               </li>
               <li class="info-item">
                 <span class="info-key">Location</span
-                ><span class="info-val">Pekalongan, Central Java</span>
-              </li>
-              <li class="info-item">
-                <span class="info-key">Timezone</span
-                ><span class="info-val">WIB / UTC+7</span>
-              </li>
-              <li class="info-item">
-                <span class="info-key">Education</span
-                ><span class="info-val">Institut Widya Pratama</span>
-              </li>
-              <li class="info-item">
-                <span class="info-key">Languages</span
-                ><span class="info-val">Indonesian (native) · English</span>
+                ><span class="info-val">Pekalongan, ID</span>
               </li>
               <li class="info-item">
                 <span class="info-key">Status</span
@@ -143,350 +110,328 @@
         </div>
       </section>
 
-      <!-- FOCUS AREAS -->
-      <div class="alt-bg">
-        <section id="focus">
-          <p class="label reveal">Job placement</p>
-          <h2 class="section-h2 reveal">What I do best</h2>
-          <div class="focus-grid">
-            <div class="focus-card reveal">
-              <div class="focus-card-inner" data-tilt>
-                <!-- <span class="focus-icon">🚀</span> -->
-                <div class="focus-title">Fullstack Development</div>
-                <p class="focus-desc">
-                  From database schema design and API development to polished
-                  frontend components. I build scalable web applications with
-                  end-to-end functionality.
-                </p>
-                <div class="focus-tags tags">
-                  <span class="tag">CodeIgniter 4</span>
-                  <span class="tag">Laravel</span>
-                  <span class="tag">Golang</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">Bootstrap</span>
-                  <span class="tag">Tailwind</span>
-                  <span class="tag">PHP</span>
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">MySQL</span>
-                  <span class="tag">JavaScript</span>
-                </div>
-              </div>
-            </div>
-            <div class="focus-card reveal">
-              <div class="focus-card-inner" data-tilt>
-                <!-- <span class="focus-icon">🎨</span> -->
-                <div class="focus-title">Graphic & UI Design</div>
-                <p class="focus-desc">
-                  Creating brand identity, UI/UX for web, and high-impact
-                  digital assets. I ensure your software is as beautiful as it
-                  is functional.
-                </p>
-                <div class="focus-tags tags">
-                  <span class="tag">Affinity Suite</span>
-                  <span class="tag">Adobe Photoshop</span>
-                  <span class="tag">Adobe Illustrator</span>
-                  <span class="tag">Canva</span>
-                </div>
+      <section id="focus">
+        <p class="label reveal">>> sys.focus</p>
+        <h2 class="section-h2 reveal">Core Protocols</h2>
+        <div class="focus-grid">
+          <div class="focus-card reveal">
+            <div class="focus-card-inner" data-tilt>
+              <div class="focus-title">Fullstack Development</div>
+              <p class="focus-desc">
+                From database schema design and API development to polished
+                frontend components. I build scalable web applications.
+              </p>
+              <div class="focus-tags tags">
+                <span class="tag">CodeIgniter 4</span
+                ><span class="tag">Laravel</span><span class="tag">Golang</span
+                ><span class="tag">MySQL</span>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-
+          <div class="focus-card reveal" style="transition-delay: 0.1s">
+            <div class="focus-card-inner" data-tilt>
+              <div class="focus-title">Graphic & UI Design</div>
+              <p class="focus-desc">
+                Creating brand identity, UI/UX for web, and high-impact digital
+                assets. Ensuring software is beautiful and functional.
+              </p>
+              <div class="focus-tags tags">
+                <span class="tag">Affinity Suite</span
+                ><span class="tag">Figma</span
+                ><span class="tag">Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- SKILLS -->
       <section id="skills">
-        <p class="label reveal">Technical skills</p>
-        <h2 class="section-h2 reveal">The tools I reach for</h2>
-
+        <p class="label reveal">>> sys.skills</p>
+        <h2 class="section-h2 reveal">Tech Stack</h2>
         <div class="skills-cols" id="skillsGrid">
-          <div class="skill-card reveal" style="transition-delay: 0.04s">
-            <span class="skill-icon">🔥</span>
+          <div class="skill-card reveal">
             <div class="skill-name">CodeIgniter 4</div>
-            <div class="skill-lvl">Advanced</div>
             <div class="skill-bar">
               <div class="skill-fill" data-pct="90"></div>
             </div>
           </div>
-          <div class="skill-card reveal" style="transition-delay: 0.08s">
-            <span class="skill-icon">🟪</span>
-            <div class="skill-name">Bootstrap</div>
-            <div class="skill-lvl">Advanced</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-pct="95"></div>
-            </div>
-          </div>
-          <div class="skill-card reveal" style="transition-delay: 0.12s">
-            <span class="skill-icon">🔴</span>
+          <div class="skill-card reveal" style="transition-delay: 0.05s">
             <div class="skill-name">Laravel</div>
-            <div class="skill-lvl">Proficient</div>
             <div class="skill-bar">
               <div class="skill-fill" data-pct="75"></div>
             </div>
           </div>
-          <div class="skill-card reveal" style="transition-delay: 0.16s">
-            <span class="skill-icon">⚡</span>
-            <div class="skill-name">JavaScript &amp; AJAX</div>
-            <div class="skill-lvl">Proficient</div>
+          <div class="skill-card reveal" style="transition-delay: 0.1s">
+            <div class="skill-name">JavaScript & AJAX</div>
             <div class="skill-bar">
               <div class="skill-fill" data-pct="80"></div>
             </div>
           </div>
-          <div class="skill-card reveal" style="transition-delay: 0.2s">
-            <span class="skill-icon">🎨</span>
-            <div class="skill-name">Figma &amp; Canva</div>
-            <div class="skill-lvl">Advanced</div>
+          <div class="skill-card reveal" style="transition-delay: 0.15s">
+            <div class="skill-name">Java & Python</div>
             <div class="skill-bar">
               <div class="skill-fill" data-pct="88"></div>
             </div>
           </div>
-          <div class="skill-card reveal" style="transition-delay: 0.24s">
-            <span class="skill-icon">✨</span>
-            <div class="skill-name">Affinity Designer</div>
-            <div class="skill-lvl">Proficient</div>
+          <div class="skill-card reveal" style="transition-delay: 0.2s">
+            <div class="skill-name">Figma & UI</div>
             <div class="skill-bar">
-              <div class="skill-fill" data-pct="75"></div>
+              <div class="skill-fill" data-pct="85"></div>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay: 0.25s">
+            <div class="skill-name">Photoshop & Affinity</div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="80"></div>
             </div>
           </div>
         </div>
       </section>
-
       <!-- EXPERIENCE -->
-      <div class="alt-bg">
-        <section id="experience">
-          <p class="label reveal">Work &amp; Education</p>
-          <h2 class="section-h2 reveal">My Journey</h2>
-
-          <div class="timeline">
-            <div class="tl-item active reveal">
-              <div class="tl-header">
-                <div class="tl-title">Frontend &amp; System Developer</div>
-                <div class="tl-period">2025</div>
-              </div>
-              <div class="tl-company">Project: MAGNET (SIAP MAGANG)</div>
-              <p class="tl-desc">
-                Developed and deployed the web-based internship management
-                platform (magnet.pekalongankota.go.id). Focused on the user
-                interface and frontend logic, bridging the needs of mahasiswa
-                (users) and DPMPTSP (admin).
-              </p>
-              <div class="tags">
-                <span class="tag">Frontend</span><span class="tag">Web Dev</span
-                ><span class="tag">UI/UX</span>
-              </div>
+      <section id="experience">
+        <p class="label reveal">>> sys.journey</p>
+        <h2 class="section-h2 reveal">Career Timeline</h2>
+        <div class="timeline">
+          <div class="tl-item active reveal">
+            <div class="tl-header">
+              <div class="tl-title">Web Developer Intern</div>
+              <div class="tl-period">Mar 2025 — Jan 2026</div>
             </div>
-
-            <div class="tl-item reveal" style="transition-delay: 0.08s">
-              <div class="tl-header">
-                <div class="tl-title">
-                  System Analyst &amp; Development Intern
-                </div>
-                <div class="tl-period">May 2025 — Jun 2025</div>
-              </div>
-              <div class="tl-company">BAPPERIDA Kota Pekalongan</div>
-              <p class="tl-desc">
-                Completed an internship focused on system analysis and
-                development, mapping out requirements and optimizing system
-                workflows for local government applications.
-              </p>
-              <div class="tags">
-                <span class="tag">System Analysis</span
-                ><span class="tag">Development</span>
-              </div>
-            </div>
-
-            <div class="tl-item reveal" style="transition-delay: 0.16s">
-              <div class="tl-header">
-                <div class="tl-title">Information Systems Student</div>
-                <div class="tl-period">Ongoing</div>
-              </div>
-              <div class="tl-company">Institut Widya Pratama · Pekalongan</div>
-              <p class="tl-desc">
-                Pursuing a degree in Information Systems. Active member of UKM
-                Pengembangan Komputer, focusing on practical programming and UI
-                development.
-              </p>
-              <div class="tags">
-                <span class="tag">Information Systems</span
-                ><span class="tag">UKM Komputer</span>
-              </div>
+            <div class="tl-company">BAPPERIDA Kota Pekalongan</div>
+            <p class="tl-desc">
+              Built the MAGNET web portal from scratch as a full-stack developer
+              to digitize internship management. Engineered both the backend
+              architecture and the frontend UI/UX, seamlessly bridging
+              interactions between mahasiswa and DPMPTSP.
+            </p>
+            <div class="tags">
+              <span class="tag">Fullstack</span>
             </div>
           </div>
-        </section>
-      </div>
 
+          <div class="tl-item reveal" style="transition-delay: 0.1s">
+            <div class="tl-header">
+              <div class="tl-title">Computer Unit Lab Assistant</div>
+              <div class="tl-period">Sep 2022 — Feb 2025</div>
+            </div>
+            <div class="tl-company">Institut Widya Pratama</div>
+            <p class="tl-desc">
+              Responsible for laboratory setup, hardware troubleshooting, and
+              routine maintenance. Managed lab asset data and assisted students
+              during practical learning.
+            </p>
+            <div class="tags">
+              <span class="tag">Hardware</span
+              ><span class="tag">Maintenance</span>
+            </div>
+          </div>
+          <div class="tl-item reveal" style="transition-delay: 0.2s">
+            <div class="tl-header">
+              <div class="tl-title">Bachelor of Computer Science</div>
+              <div class="tl-period">Sep 2022 — May 2026</div>
+            </div>
+            <div class="tl-company">Institut Widya Pratama</div>
+            <p class="tl-desc">
+              Academic focus on web application development and information
+              systems analysis. Active member of UKM Pengembangan Komputer.
+            </p>
+            <div class="tags">
+              <span class="tag">Computer Science</span
+              ><span class="tag">UKM Komputer</span>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- PROJECTS -->
       <section id="projects">
-        <p class="label reveal">Selected projects</p>
-        <h2 class="section-h2 reveal">Things I've built</h2>
-
+        <p class="label reveal">>> sys.projects</p>
+        <h2 class="section-h2 reveal">Constructed Modules</h2>
         <div class="projects-grid">
-          <div class="proj-card reveal" style="transition-delay: 0.05s">
+          <div class="proj-card reveal">
             <div class="proj-card-inner">
-              <div class="proj-front">
-                <div class="proj-num">01</div>
-                <div class="proj-title">MAGNET (SIAP MAGANG)</div>
-                <div class="proj-short">Web Platform · Frontend Focus</div>
-                <div class="tags">
-                  <span class="tag">Web</span><span class="tag">Frontend</span>
-                </div>
-              </div>
-              <div class="proj-back">
-                <div>
-                  <div class="proj-back-title">MAGNET System</div>
-                  <p class="proj-back-desc">
-                    An internship management platform utilized by students and
-                    administered by DPMPTSP Pekalongan. Focused on creating an
-                    intuitive frontend experience.
-                  </p>
-                </div>
-              </div>
+              <div class="proj-num">01</div>
+              <div class="proj-title">MAGNET (SIAP MAGANG)</div>
+              <div class="proj-short">Web Platform · Fullstack</div>
+              <p class="proj-desc">
+                Internship management platform administered by BAPPERIDA
+                Pekalongan. Fullstack implementation.
+              </p>
             </div>
-            <!-- <div class="proj-hint">Hover to flip</div> -->
           </div>
 
-          <!-- <div class="proj-card reveal" style="transition-delay: 0.1s">
+          <div class="proj-card reveal" style="transition-delay: 0.1s">
             <div class="proj-card-inner">
-              <div class="proj-front">
-                <div class="proj-num">02</div>
-                <div class="proj-title">Frontend Interfaces</div>
-                <div class="proj-short">CodeIgniter 4 · Bootstrap</div>
-                <div class="tags">
-                  <span class="tag">CodeIgniter</span
-                  ><span class="tag">Bootstrap</span>
-                </div>
-              </div>
-              <div class="proj-back">
-                <div>
-                  <div class="proj-back-title">UI Engineering</div>
-                  <p class="proj-back-desc">
-                    Extensive experience debugging complex logic and styling
-                    clean, responsive interfaces using CodeIgniter 4 and
-                    Bootstrap frameworks.
-                  </p>
-                </div>
-              </div>
+              <div class="proj-num">02</div>
+              <div class="proj-title">Ticket Booking System</div>
+              <div class="proj-short">CodeIgniter 4 · Midtrans</div>
+              <p class="proj-desc">
+                Web-based ticket booking integrated with Midtrans for secure
+                payment processing.
+              </p>
             </div>
-            <div class="proj-hint">Hover to flip</div>
-          </div> -->
+          </div>
 
-          <div class="proj-card reveal" style="transition-delay: 0.15s">
+          <div class="proj-card reveal" style="transition-delay: 0.2s">
             <div class="proj-card-inner">
-              <div class="proj-front">
-                <div class="proj-num">02</div>
-                <div class="proj-title">Graphic &amp; Digital Assets</div>
-                <div class="proj-short">Adobe Photoshop · Affinity · Canva</div>
-                <div class="tags">
-                  <span class="tag">Design</span
-                  ><span class="tag">UI Kits</span>
-                </div>
-              </div>
-              <div class="proj-back">
-                <div>
-                  <div class="proj-back-title">Visual Design</div>
-                  <p class="proj-back-desc">
-                    Designing formal posters, flyers, and digital apparel
-                    mockups. Leveraging AI tools like Midjourney alongside
-                    standard vector software.
-                  </p>
-                </div>
-              </div>
+              <div class="proj-num">03</div>
+              <div class="proj-title">Barbershop Booking</div>
+              <div class="proj-short">Mobile UI/UX · Figma</div>
+              <p class="proj-desc">
+                Mobile application interface prototype designed in Figma for
+                booking barbershop stylists.
+              </p>
             </div>
-            <!-- <div class="proj-hint">Hover to flip</div> -->
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-card-inner">
+              <div class="proj-num">04</div>
+              <div class="proj-title">Jims Honey App</div>
+              <div class="proj-short">Desktop App · Java</div>
+              <p class="proj-desc">
+                Desktop application built using Java to manage operations and
+                transactions for resellers.
+              </p>
+            </div>
+          </div>
+
+          <div class="proj-card reveal" style="transition-delay: 0.1s">
+            <div class="proj-card-inner">
+              <div class="proj-num">05</div>
+              <div class="proj-title">Coffeeshop Enterprise</div>
+              <div class="proj-short">Enterprise System · CI4</div>
+              <p class="proj-desc">
+                Comprehensive enterprise management system utilizing the
+                CodeIgniter 4 framework.
+              </p>
+            </div>
+          </div>
+
+          <div class="proj-card reveal" style="transition-delay: 0.2s">
+            <div class="proj-card-inner">
+              <div class="proj-num">06</div>
+              <div class="proj-title">Digital Asset Vault</div>
+              <div class="proj-short">Design · UI Kits</div>
+              <p class="proj-desc">
+                Posters, flyers, and digital apparel mockups. Cohesive digital
+                assets for web projects.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+      <!-- Ig -->
+      <section id="social-feed">
+        <p class="label reveal">>> sys.transmission</p>
+        <h2 class="section-h2 reveal">Data Stream: @xenaa.bat</h2>
 
-      <!-- CONTACT -->
-      <!-- <div class="alt-bg">
-        <section id="contact">
-          <p class="label reveal">Contact</p>
-          <h2 class="section-h2 reveal">Let's work together</h2>
-          <p class="section-sub reveal">
-            Whether you have a project, a role, or just a question — I'd love to
-            hear from you.
-          </p>
-
-          <div class="contact-grid">
-            <div class="reveal">
-              <form class="contact-form" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                  <label for="name">Your name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Jane Smith"
-                    required
-                  />
+        <div class="ig-grid">
+          <a
+            href="https://www.instagram.com/p/DXUcyVJlIqd/"
+            target="_blank"
+            class="ig-post reveal"
+          >
+            <div class="ig-post-inner">
+              <div class="ig-img-wrap">
+                <img
+                  src="img/p1.png"
+                  alt="Instagram Post 1"
+                />
+                <div class="ig-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Decrypt Post</span>
                 </div>
-                <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="jane@company.com"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="subject">Area of interest</label>
-                  <select id="subject">
-                    <option value="">Select a focus area...</option>
-                    <option>Frontend Development</option>
-                    <option>Web System Integration</option>
-                    <option>Graphic/UI Design</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="message"
-                    >Tell me about your project or role</label
-                  >
-                  <textarea
-                    id="message"
-                    rows="5"
-                    placeholder="I'm looking for someone to..."
-                  ></textarea>
-                </div>
-                <button type="submit" class="submit-btn" id="submitBtn">
-                  Send message →
-                </button>
-              </form>
-            </div>
-
-            <div class="contact-meta reveal" style="transition-delay: 0.12s">
-              <div class="contact-item">
-                <span class="contact-key">Location</span>
-                <span class="contact-val">Podosugih, Pekalongan Barat</span>
-              </div>
-              <div class="contact-item">
-                <span class="contact-key">Focus areas</span>
-                <span class="contact-val">Frontend · UI/UX · Web Systems</span>
-              </div>
-              <div class="contact-item">
-                <span class="contact-key">Availability</span>
-                <span
-                  class="contact-val"
-                  style="color: var(--red); font-weight: 600"
-                  >Open to frontend roles &amp; freelance</span
-                >
               </div>
             </div>
-          </div>
-        </section>
-      </div> -->
+          </a>
+
+          <a
+            href="https://www.instagram.com/p/DXUeeUCFEjS/"
+            target="_blank"
+            class="ig-post reveal"
+            style="transition-delay: 0.1s"
+          >
+            <div class="ig-post-inner">
+              <div class="ig-img-wrap">
+                <img
+                  src="img/p2.png"
+                  alt="Instagram Post 2"
+                />
+                <div class="ig-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Decrypt Post</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.instagram.com/p/DXUfSATFFjd/"
+            target="_blank"
+            class="ig-post reveal"
+            style="transition-delay: 0.2s"
+          >
+            <div class="ig-post-inner">
+              <div class="ig-img-wrap">
+                <img
+                  src="img/p3.png"
+                  alt="Instagram Post 3"
+                />
+                <div class="ig-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Decrypt Post</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.instagram.com/p/DXUcgBWFHwG/"
+            target="_blank"
+            class="ig-post reveal"
+            style="transition-delay: 0.3s"
+          >
+            <div class="ig-post-inner">
+              <div class="ig-img-wrap">
+                <img
+                  src="img/p4.png"
+                  alt="Instagram Post 4"
+                />
+                <div class="ig-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Decrypt Post</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="reveal" style="text-align: center; margin-top: 40px">
+          <a href="https://instagram.com/xenaa.bat" target="_blank" class="btn"
+            >@xenaa.bat</a
+          >
+        </div>
+      </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
       <div class="footer-inner">
-        <div class="footer-logo">antama<span>.</span>kurnialista — 2026</div>
-        <div class="footer-note">Frontend · Web Systems · Design</div>
+        <div class="footer-logo">OFTAKAA_ ©2026</div>
+        <div class="footer-social">
+          <a href="https://github.com/Nearee" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/takaajaa" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://instagram.com/oftakaa_" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
       </div>
     </footer>
 
     <script>
-      /* ── CUSTOM CURSOR ── */
       const cursor = document.getElementById("cursor");
       const cursorRing = document.getElementById("cursorRing");
       let mx = 0,
@@ -502,109 +447,66 @@
       });
 
       (function animateRing() {
-        rx += (mx - rx) * 0.12;
-        ry += (my - ry) * 0.12;
+        rx += (mx - rx) * 0.15;
+        ry += (my - ry) * 0.15;
         cursorRing.style.left = rx + "px";
         cursorRing.style.top = ry + "px";
         requestAnimationFrame(animateRing);
       })();
 
       document
-        .querySelectorAll("a, button, .focus-card, .skill-card, .cert-card")
+        .querySelectorAll("a, .focus-card, .skill-card, .proj-card")
         .forEach((el) => {
           el.addEventListener("mouseenter", () => {
-            cursor.style.transform = "translate(-50%,-50%) scale(2.5)";
-            cursorRing.style.opacity = "0";
+            cursor.style.transform = "translate(-50%,-50%) scale(2)";
+            cursorRing.style.borderColor = "var(--neon-pink)";
+            cursorRing.style.transform = "translate(-50%,-50%) scale(1.5)";
           });
           el.addEventListener("mouseleave", () => {
             cursor.style.transform = "translate(-50%,-50%) scale(1)";
-            cursorRing.style.opacity = "0.6";
+            cursorRing.style.borderColor = "var(--neon-cyan)";
+            cursorRing.style.transform = "translate(-50%,-50%) scale(1)";
           });
         });
 
-      /* ── SCROLL REVEAL ── */
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((e) => {
             if (e.isIntersecting) {
               e.target.classList.add("visible");
+
+              // Trigger skill bars
+              e.target.querySelectorAll(".skill-fill").forEach((fill) => {
+                setTimeout(
+                  () => (fill.style.width = fill.dataset.pct + "%"),
+                  200,
+                );
+              });
+
               observer.unobserve(e.target);
             }
           });
         },
-        {
-          threshold: 0.1,
-          rootMargin: "0px 0px -48px 0px",
-        },
+        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
       );
 
       document
         .querySelectorAll(".reveal")
         .forEach((el) => observer.observe(el));
 
-      /* ── SKILL BAR ANIMATION ── */
-      const barObs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.querySelectorAll(".skill-fill").forEach((fill) => {
-                const pct = fill.dataset.pct;
-                fill.style.width = "0%";
-                setTimeout(() => (fill.style.width = pct + "%"), 120);
-              });
-              barObs.unobserve(e.target);
-            }
-          });
-        },
-        {
-          threshold: 0.25,
-        },
-      );
-
-      const skillsGrid = document.getElementById("skillsGrid");
-      if (skillsGrid) barObs.observe(skillsGrid);
-
-      /* ── 3D TILT ON FOCUS CARDS ── */
+      // 3D Tilt
       document.querySelectorAll("[data-tilt]").forEach((card) => {
         card.addEventListener("mousemove", (e) => {
           const rect = card.getBoundingClientRect();
-          const cx = rect.left + rect.width / 2;
-          const cy = rect.top + rect.height / 2;
-          const dx = (e.clientX - cx) / (rect.width / 2);
-          const dy = (e.clientY - cy) / (rect.height / 2);
-          card.style.transform = `rotateY(${dx * 9}deg) rotateX(${-dy * 7}deg) scale(1.02)`;
+          const x = (e.clientX - rect.left - rect.width / 2) / 15;
+          const y = (e.clientY - rect.top - rect.height / 2) / -15;
+          card.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${y}deg) scale3d(1.02, 1.02, 1.02)`;
         });
         card.addEventListener("mouseleave", () => {
-          card.style.transform = "";
-          card.style.transition = "transform 0.5s cubic-bezier(0.22,1,0.36,1)";
-          setTimeout(() => (card.style.transition = ""), 500);
+          card.style.transform =
+            "perspective(1000px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)";
         });
       });
-
-      /* ── CONTACT FORM ── */
-      function handleSubmit(e) {
-        e.preventDefault();
-        const btn = document.getElementById("submitBtn");
-        btn.textContent = "Sending…";
-        btn.disabled = true;
-        setTimeout(() => {
-          btn.textContent = "Message sent ✓";
-          btn.style.background = "var(--red)";
-          document.querySelector(".contact-form").reset();
-          setTimeout(() => {
-            btn.textContent = "Send message →";
-            btn.disabled = false;
-            btn.style.background = "";
-          }, 3500);
-        }, 1200);
-      }
-
-      /* ── HERO ENTRANCE ── */
-      setTimeout(() => {
-        document
-          .querySelectorAll("#hero .reveal")
-          .forEach((el) => el.classList.add("visible"));
-      }, 200);
     </script>
   </body>
 </html>
